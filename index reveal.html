@@ -58,20 +58,20 @@
 
 
 <section data-background-color="#B0C4DE" style="text-align: left;"><h1>Почему веб-фреимворки?</h1>
-<h3>Создание презентации с помощью кода(для любителей писать код)</h3>
+<h3>Создание презентации с помощью кода (для любителей писать код)</h3>
 <h3>Более легкая работа в текстовых редакторах, совместная работа и отслеживание изменений в тексте</h3><br>
-<h3>Удобнее размещать и показывать в онлайн(для html необходим только браузер)</h3>
+<h3>Удобнее размещать и показывать в онлайн (для html необходим только браузер)</h3>
 </section> 
 
 
 <section data-background-color="#B0C4DE">
-	<h1>Усторойство reveal.js и impress.js</h1>
+	<h1>Устройство reveal.js и impress.js</h1>
 	<br>
-	<li><h3>html файл(презентация)</h3></li>
+	<ul><li><h3>html файл (презентация)</h3></li>
 	<br>
-	<li><h3>css файл(заранее встроенные стили)</h3></li>
+	<li><h3>css файл (заранее настроенные стили)</h3></li>
 	<br>
-	<li><h3>js файлы (код на языке java script,обработчики событий и анимации)</h3></li>
+	<li><h3>js файлы (код на языке java script,обработчики событий и анимации)</h3></li></ul>
 </section>
 
 <section  data-background-color="#B0C4DE"> 
@@ -84,15 +84,22 @@
     filter: none;
   }
 </style>
-<section style="text-align: left;font-size: 2em; line-height: 1.5em;">
+<section style="text-align: left;font-size: 1.5em; line-height: 1.5em;">
 	<br><br>
   <li class="fragment custom blur">вставка картинок</li>
   <li class="fragment custom blur">gif</li>
   <li class="fragment custom blur">вставка формул</li>
    <li class="fragment custom blur">таблица</li>
-   <li class="fragment custom blur">вставка кода и подсветка</li>
+   <li class="fragment custom blur">вставка кода и подсветка синтаксиза, анимацмя выделения строк кода</li>
    <li class="fragment custom blur">смена стиля презентации</li>
+     <li class="fragment custom blur">древовидная структура презентации</li>
+     <li class="fragment custom blur">поддержка JavaScript библиотек</li>
+   
 </section>
+</section>
+<section data-background-color="#B0C4DE"> <h1> Структура слайда </h1>
+
+<img src="images\slide.png" width=900px>
 </section>
 
 
@@ -147,29 +154,33 @@
 <section data-background-color="#B0C4DE"><section>
 <h1>Подстветка кода</h1>
 <pre><code data-line-numbers="|7-11|18-19|" data-ln-start-from="1">
-   begin
-writeln('Введите кол-во проверок');
-readln(h);
-for f := 1 to h do
 begin
-write('Введите значение a=');readln(a);
-write('Введите значение b=');readln(b);
-write('Введите значение c=');readln(c);
-write('Введите значение j=');readln(j);
-write('Введите значение x=');readln(x);
-if (a<=j) and (b<=x) or //Условия
-(b<=j) and (a<=x) or
-(a<=j) and (c<=x) or
-(c<=j) and (a<=x) or
-(c<=j) and (b<=x) or
-(b<=j) and (c<=x)
-then Writeln('соответсвует условию');
-else Writeln('не соответствует условию');
-readln;
-end;
+  writeln('Введите кол-во проверок');
+  readln(h);
+  for f := 1 to h do
+  begin
+   write('Введите значение a=');readln(a);
+   write('Введите значение b=');readln(b);
+   write('Введите значение c=');readln(c);
+   write('Введите значение j=');readln(j);
+   write('Введите значение x=');readln(x);
+        if (a<=j) and (b<=x) or 
+           (b<=j) and (a<=x) or
+           (a<=j) and (c<=x) or
+           (c<=j) and (a<=x) or
+           (c<=j) and (b<=x) or
+           (b<=j) and (c<=x)
+        then Writeln('соответсвует условию');
+     else Writeln('не соответствует условию');
+   readln;
+ end;
 end. 
   </pre></code>
 </section>
+
+
+
+
 <section> <img src="images\code.png" width=900px></section>
 </section>
 
@@ -177,10 +188,6 @@ end.
 
 <!--3. вставка кода-->
 <section data-background-color="#B0C4DE">
-	<section>
-	<br>
-	<h1>Как оно работает?</h1>
-</section>
 
 	<section><h1>Формула в формате LaTeX</h1>
 			<img src="images\formula.png" width=900px>
@@ -212,29 +219,35 @@ end.
 <section style="background-color:	#4682B4";>
 	<img src="images\stile_new.png" width=900px>
 </section>
+<section>	<img src="images\dark.png" width=900px> </section>
 </section>
 
 <section>
 
 
-<section data-markdown >
-  <textarea data-template>
-    ## **Markdown**— это облегчённый язык разметки для форматирования текстовых документов.
-    ---
-    ## Идея Markdown в том, чтобы было **проще читать, писать и редактировать** тексты.
-    ---
-    ### У Markdown есть много реализаций и диалектов. Разные платформы расширяют инструментарий языка для своих нужд.
-  </textarea>
+<section><h1> Markdown</h1> 
+<h2>Markdown — это облегчённый язык разметки для форматирования текстовых документов. Markdown-файлы без потерь преобразуются в другие форматы (например, HTML и PDF), открываются в любом текстовом редакторе и будут понятны даже в виде исходного кода.<h2>
+
+</section>
+<section data-background-color="#B0C4DE"><img src="images\marik.png" width=900px></section>
+
+
+</section>
+
+<section data-background-color="#B0C4DE">
+<img src="images/batton.png" align="right" width="420" height="304" ><br><br>
+<br>
+<q style="text-align: left;font-size: 2em; line-height: 1em;" >
+ Я, по крайней мере, не притворяюсь, что у меня всё получилось, когда ничего не получилось.</q>
 </section>
 
 
 
-<section data-background-color="#B0C4DE"><img src="images\primer.png" width=900px></section>
-<section data-background-color="#B0C4DE"><img src="images\markSt.png" width=900px></section>
-<section data-background-color="#B0C4DE"><img src="images\MarkZag.png" width=900px></section>
 
 
-</section>
+
+
+
 
 
 <section style="background-color:"#e9edf5>   <!--цвет таблицы-->     
